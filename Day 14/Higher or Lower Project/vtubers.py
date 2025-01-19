@@ -66,7 +66,7 @@ data = [
     {
         'name': 'Toono Oto',
         'subs': 59_307,
-        'bio': 'A clockwork girl, full of emotion who will soothe your heart with sound',
+        'bio': 'A clockwork girl, full of emotion who will soothe your heart with sound.',
         'agency': 'Varium'
     },
     {
@@ -79,7 +79,7 @@ data = [
     {
         'name': 'Kureha Mitora',
         'subs': 36_000,
-        'bio': 'A retro game cryptid vtuber',
+        'bio': 'A retro game cryptid vtuber.',
         'agency': 'independent'
     },
     {
