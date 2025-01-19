@@ -27,6 +27,8 @@ guessed_correct = True
 print(logo)
 while guessed_correct:
 # make the A the previous B, make the dictionary entry after the current A the next B
+    if len(data) == 1:
+        print(f'You won. You hit the maximum score of {score}. Congratulations.')
     if a_vtuber != {}:
         a_vtuber = higher
         b_vtuber = choose_random_vtuber(data)
