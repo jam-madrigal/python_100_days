@@ -20,6 +20,7 @@ def get_higher_subs(a, b):
 choose_random_vtuber(data)
 # make a variable to hold the players score, starts at 0
 score = 0
+max_score = len(data) - 1
 # store A and B outside the loop, if A is not empty, then A = the current B, and B = random, else A is random, B random
 a_vtuber = {}
 b_vtuber = {}
@@ -27,8 +28,6 @@ guessed_correct = True
 print(logo)
 while guessed_correct:
 # make the A the previous B, make the dictionary entry after the current A the next B
-    if len(data) == 1:
-        print(f'You won. You hit the maximum score of {score}. Congratulations.')
     if a_vtuber != {}:
         a_vtuber = higher
         b_vtuber = choose_random_vtuber(data)
@@ -51,11 +50,14 @@ while guessed_correct:
     else:
         'Invalid choice. Game over'
         guessed_correct = False
-
 # keep going if they guess correctly, increase their score by one,
     if higher == guess:
         score += 1
-        print(f'You guessed correctly. Your current score is {score}')
+        if score == max_score:
+            print(f'You won. You hit the maximum score of {score}. Congratulations.')
+            guessed_correct = False
+        else:
+            print(f'You guessed correctly. Your current score is {score}')
     else:
         print(f'You guessed incorrectly. Your final score was {score}')
         guessed_correct = False
