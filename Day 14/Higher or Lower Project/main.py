@@ -1,5 +1,8 @@
 # make a list of dictionaries of vtubers along with their sub count and something about them in another file
-# TODO: Make a version that randomizes the vtuber every time, aka just doesn't pop off the list
+# TODO: Make a version that randomizes the vtuber every time, aka just doesn't pop off the list,
+#  do that by changing the function to not pop, just return a random vtuber,
+#  and remove the conditions checking for an existing A vtuber and just set them random every time,
+#  game runs indefinitely until they get something wrong and doesn't need to check the max score so remove that too
 import random
 from vtubers import data
 from art import logo
