@@ -24,8 +24,11 @@ max_score = len(data) - 1
 # store A and B outside the loop, if A is not empty, then A = the current B, and B = random, else A is random, B random
 a_vtuber = {}
 b_vtuber = {}
+
 guessed_correct = True
+
 print(logo)
+
 while guessed_correct:
 # make the A the previous B, make the dictionary entry after the current A the next B
     if a_vtuber != {}:
