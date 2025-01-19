@@ -1,4 +1,5 @@
 # make a list of dictionaries of vtubers along with their sub count and something about them in another file
+# TODO: Make a version that randomizes the vtuber every time, aka just doesn't pop off the list
 import random
 from vtubers import data
 from art import logo
@@ -17,7 +18,6 @@ def get_higher_subs(a, b):
     else:
         higher = b
     return higher
-choose_random_vtuber(data)
 # make a variable to hold the players score, starts at 0
 score = 0
 max_score = len(data) - 1
