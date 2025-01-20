@@ -57,6 +57,7 @@ while guessed_correct:
         'Invalid choice. Game over'
         guessed_correct = False
 # keep going if they guess correctly, increase their score by one,
+# TODO: Put this functionality into its own check_answer(higher, guess) function or something
     if higher == guess:
         score += 1
         if score == max_score:
