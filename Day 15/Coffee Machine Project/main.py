@@ -84,6 +84,7 @@ def make_drink():
         print(f'Here is your change of {change}.')
     # tell the user here is your drink, enjoy
     print(resources)
+    print(f'Here is your {selection}. Enjoy')
     make_drink()
     # TODO: 3. Every time the sequence is completed, it should prompt the user again
     # TODO: 4. 'off' as a secret word can be used to turn off the machine
