@@ -1,3 +1,4 @@
+# OOP fundamentals, attributes and construction
 from turtle import Turtle, Screen
 
 hermit = Turtle()
