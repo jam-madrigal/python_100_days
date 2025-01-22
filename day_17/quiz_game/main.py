@@ -1,6 +1,7 @@
 # TODO: 1. Import the question class and question data
 from question_model import Question
 from data import question_data
+from quiz_brain import QuizBrain
 # TODO: 2. Create a function to loop through question data and make a question object from each
 question_bank = []
 def make_questions(data):
@@ -10,4 +11,8 @@ def make_questions(data):
 # TODO: 3. Save each question to a question bank
 make_questions(question_data)
 
+# TODO: 4. Import quiz brain class, set the question from the current question number and show it to the user, prompting for an answer
+brain = QuizBrain(question_bank)
+
+brain.next_question()
 
