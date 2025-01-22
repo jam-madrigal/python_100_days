@@ -6,6 +6,4 @@ class Question:
         self.text = text
         self.answer = answer
 
-q1 = Question('butt?', 'yes')
 
-print(q1.text, q1.answer)
