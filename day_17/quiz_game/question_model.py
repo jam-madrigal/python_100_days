@@ -1,10 +1,11 @@
 # TODO: 1. Create a question class that has a constructor with two attributes: question and answer
 class Question:
-    def __init__(self, question, answer):
+
+    def __init__(self, text, answer):
         print('Creating question...')
-        self.question = question
+        self.text = text
         self.answer = answer
 
 q1 = Question('butt?', 'yes')
 
-print(q1.question, q1.answer)
+print(q1.text, q1.answer)
