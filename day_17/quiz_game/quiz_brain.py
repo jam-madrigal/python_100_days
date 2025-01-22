@@ -8,10 +8,12 @@ class QuizBrain:
         self.question_number = 0
         self.q_list = q_list
 
+    def next_question(self):
+        question = self.q_list[self.question_number]
+        input(f'{question.text} Answer "true" or "false":\n').lower()
+
+
 # TODO: 4. Get the question from the current question number and show it to the user, prompting for an answer
 brain = QuizBrain(question_bank)
-q_number = brain.question_number
-question = brain.q_list[q_number]
 
-input(f'{question.text} Answer "true" or "false":\n').lower()
-
+brain.next_question()
