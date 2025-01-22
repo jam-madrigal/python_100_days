@@ -14,5 +14,6 @@ make_questions(question_data)
 # TODO: 4. Import quiz brain class, set the question from the current question number and show it to the user, prompting for an answer
 brain = QuizBrain(question_bank)
 
-brain.next_question()
+while brain.still_has_questions():
+    brain.next_question()
 
