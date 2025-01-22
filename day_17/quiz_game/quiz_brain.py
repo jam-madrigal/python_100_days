@@ -10,7 +10,7 @@ class QuizBrain:
 
     def next_question(self):
         question = self.q_list[self.question_number]
-        input(f'{question.text} Answer "true" or "false":\n').lower()
+        input(f'Q.{self.question_number + 1} {question.text} Answer "true" or "false":\n').lower()
 
 
 # TODO: 4. Get the question from the current question number and show it to the user, prompting for an answer
