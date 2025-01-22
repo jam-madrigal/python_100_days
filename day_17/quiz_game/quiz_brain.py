@@ -8,10 +8,7 @@ class QuizBrain:
         self.q_list = q_list
 
     def still_has_questions(self):
-        if self.question_number == len(self.q_list):
-            return False
-        else:
-            return True
+        return self.question_number < len(self.q_list)
 
     def next_question(self):
         question = self.q_list[self.question_number]
