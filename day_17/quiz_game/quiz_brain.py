@@ -15,10 +15,10 @@ class QuizBrain:
         question = self.q_list[self.question_number - 1]
         answer = question.answer.lower()
         if user_answer != answer:
-            return print(f'Your answer was incorrect. Your current score is {self.score}/{self.question_number}')
+            return print(f'Your answer was incorrect. Your current score is {self.score}/{self.question_number}\n')
         else:
             self.score += 1
-            return print(f'Your answer was correct. Your current score is {self.score}/{self.question_number}')
+            return print(f'Your answer was correct. Your current score is {self.score}/{self.question_number}\n')
 
     def next_question(self):
         question = self.q_list[self.question_number]
