@@ -9,7 +9,8 @@ class QuizBrain:
 
     def next_question(self):
         question = self.q_list[self.question_number]
-        input(f'Q.{self.question_number + 1} {question.text} Answer "true" or "false":\n').lower()
+        self.question_number += 1
+        input(f'Q.{self.question_number} {question.text} Answer "true" or "false":\n').lower()
 
 
 
